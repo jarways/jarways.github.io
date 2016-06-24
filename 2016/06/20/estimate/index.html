@@ -25,6 +25,7 @@
 <li>没有问题之后每一个参与者把该故事与基准故事进行比较，然后选择一张代表其故事点数的扑克牌（不要让其他人看到），在大家都准备好之后同时一起出牌</li>
 <li>如果大家出的牌都一致（或非常接近），则完成该故事估算，转向下一个故事</li>
 <li>如果有较大差异，请估算最大和估算最小的进行解释，解释完后大家限时讨论，然后重新开始出牌，直到大家达成一致</li>
+<li>估算出的故事越多，可用来做基准的参考值就越多，也就越容易估算</li>
 <li>最终我们就能得到所有用户故事的总工作量</li>
 </ol>
 <p>在这种方法下，往往很少有故事超过3轮出牌都达成不了一致；如果遇到了多轮都达成不了一致的故事，那往往说明大家其实是对该故事到底要做什么怎么做还没有达成一致的理解，这就不是估算的问题，而是需求澄清和开发设计的问题。</p>
@@ -48,21 +49,23 @@
 <li>小时和人天受限于任务实际执行者的能力水平，在估算时引入这个不可控的变量会让估算活动更加复杂和打不成一致</li>
 <li>估算本来就不准，所以就更没有必要使用精确的单位</li>
 </ol>
-<p>但是是相对值的估算的故事点最终还是不可避免要在日历上进行编排，最好的方式是通过实践统计拿到team的单迭代故事点产出速率范围（velocity），进而估计项目整体的交付时间。</p>
+<p>但是是相对值的估算的故事点最终还是不可避免要在日历上进行编排，最好的方式是通过实践统计拿到team的单迭代故事点产出速率范围（velocity），进而据此来估计下迭代合理的交付量和项目整体的交付时间。</p>
 <p>如果对task做估算，往往就容易引导到用小时或人天作为单位了，在我过去的经验中经历过很多这样的团队，当然这样也是可以工作的，只要我们把握好几个问题：</p>
 <ul>
-<li>一个迭代半天左右的估算会议</li>
+<li>较长的迭代的估算会议（半天左右？）</li>
 <li>基于个人能力的估算（往往会有人问这个task到底是谁来做，这样就不可避免在估算的时候要做任务分配了）</li>
 <li>story工时膨胀（每个task为了保证完成都是加自己的buffer，对story估算的话就只会在story上单次加buffer；工期估计的时候加buffer是人的天性）</li>
 </ul>
-<h3 id="燃尽图"><a href="#燃尽图" class="headerlink" title="燃尽图"></a>燃尽图</h3><p>有了估算之后，我们就能非常方便的在迭代过程中使用燃尽图的方式做进度跟踪。</p>
+<h3 id="测试工作的估算"><a href="#测试工作的估算" class="headerlink" title="测试工作的估算"></a>测试工作的估算</h3><p>在一般有专门的测试成员的团队中，一般的操作会是开发工作由开发同学做估算，测试工作由测试同学自己估算。这样其实算是把一个story拆成了开发部分和测试部分两个task，然后分别估算。这样做是很常见，但是这种方式其实是暗示让我们在一个迭代中用瀑布的方式做开发。<br>在目前互联网行业越来越倾向缩编专职测试人员，推崇测试自动化、devops，希望开发人员能加强对自己的产品有更多的质量保证的大环境下，我们可以考虑把开发和测试工作放在一起来估算，让开发同学对测试工作有更全的了解，让测试和开发能更紧密的结合（而不需要传统模式下有明显的提测交接的过程）。</p>
+<h3 id="story的大小"><a href="#story的大小" class="headerlink" title="story的大小"></a>story的大小</h3><p>story有可能非常小，但是原则上story最大不能超过团队一个迭代的总交付能力，也就是说story必须是在一个迭代里能完成交付的，而不需要跨迭代。如果遇到需要跨迭代才能交付的story，要么是story还没有拆分到位，要么是行业领域特殊性，对这样的团队我们需要定义稍长时间的迭代周期。</p>
+<h3 id="燃尽图"><a href="#燃尽图" class="headerlink" title="燃尽图"></a>燃尽图</h3><p>有了估算之后，我们就能非常方便的在迭代过程中使用燃尽图的方式做进度跟踪。<br>当然，如果有对task的估计的话燃尽图的曲线可以画得更详细。</p>
 <h3 id="估算点数膨胀"><a href="#估算点数膨胀" class="headerlink" title="估算点数膨胀"></a>估算点数膨胀</h3><p>有了估算，管理层就会思考团队的交付速率问题（velocity），一旦团队的速率变成的KPI，估算点数就很可能开始默默的膨胀起来了。<br>一个基本的原则是不要使用团队自己估算的点数来作为KPI衡量团队的产出，估算的目的不是这个。</p>
 <h2 id="不同的观点"><a href="#不同的观点" class="headerlink" title="不同的观点"></a>不同的观点</h2><p>对于估算，在看板方法里有不同的看法:</p>
 <blockquote>
 <p>估算需要时间，并且（通常）是错的。</p>
 </blockquote>
 <p>看板更推崇使用历史数据或者具有预测能力的模型构建针对项目产出的概率<strong>预测</strong>。看板认为预测效率更高、成本更低，结果通常也较传统的估算、计划方法准确得多。<br>关于看板里的预测，我们以后再谈。</p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://jarways.com/2016/06/20/estimate/" data-id="cipsa79v00002c1tbq7888435" class="article-share-link">分享到</a><div class="tags"><a href="/tags/敏捷实践/">敏捷实践</a><a href="/tags/估算/">估算</a><a href="/tags/扑克/">扑克</a></div><div class="post-nav"><a href="/2016/06/18/born/" class="next">开篇</a></div><div id="disqus_thread"><script>var disqus_shortname = 'jarways';
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://jarways.com/2016/06/20/estimate/" data-id="ciptbyomm000b1ms6bzjbg0ya" class="article-share-link">分享到</a><div class="tags"><a href="/tags/敏捷实践/">敏捷实践</a><a href="/tags/估算/">估算</a><a href="/tags/扑克/">扑克</a></div><div class="post-nav"><a href="/2016/06/18/born/" class="next">开篇</a></div><div id="disqus_thread"><script>var disqus_shortname = 'jarways';
 var disqus_identifier = '2016/06/20/estimate/';
 var disqus_title = '敏捷估算';
 var disqus_url = 'http://jarways.com/2016/06/20/estimate/';
