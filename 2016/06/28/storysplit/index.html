@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>用户故事之二：怎么做用户故事拆分 | 守破離的轮回</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/4.1.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">用户故事之二：怎么做用户故事拆分</h1><a id="logo" href="/.">守破離的轮回</a><p class="description">鲁佳的博客</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">用户故事之二：怎么做用户故事拆分</h1><div class="post-meta">Jun 28, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-disqus-identifier="2016/06/28/storysplit/" href="/2016/06/28/storysplit/#disqus_thread" class="disqus-comment-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#故事拆分常用方法"><span class="toc-number">1.</span> <span class="toc-text">故事拆分常用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备阶段"><span class="toc-number">1.1.</span> <span class="toc-text">准备阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切分模式"><span class="toc-number">1.2.</span> <span class="toc-text">切分模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#切分评估"><span class="toc-number">1.3.</span> <span class="toc-text">切分评估</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#其他一些技巧"><span class="toc-number">2.</span> <span class="toc-text">其他一些技巧</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#怎么找到需求中最重要的故事"><span class="toc-number">2.1.</span> <span class="toc-text">怎么找到需求中最重要的故事</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#怎样防止重要的需求被拆掉了"><span class="toc-number">2.2.</span> <span class="toc-text">怎样防止重要的需求被拆掉了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基于数据流向的拆分"><span class="toc-number">2.3.</span> <span class="toc-text">基于数据流向的拆分</span></a></li></ol></li></ol></div></div><div class="post-content"><p><img src="http://o8z0wc44x.bkt.clouddn.com/cutcake.jpg" alt="怎么像切蛋糕一样拆分需求"></p>
+<p>上一篇我们讲了什么是用户故事，好的用户故事有哪些特征，但是面对一个史诗级的需求（或feature）需要拆分时，我们仍然有可能会茫然不知该怎么下手：</p>
+<ul>
+<li>明知太大，可就是没办法拆开怎么办？</li>
+<li>哪些重要先做的要先拆出来？</li>
+<li>怎么样防止重要需求被拆丢了？</li>
+<li>会不会拆出一些多余没用的故事？</li>
+</ul>
+<p>本文就是要探讨上面这些问题的应对方法。</p>
+<h2 id="故事拆分常用方法"><a href="#故事拆分常用方法" class="headerlink" title="故事拆分常用方法"></a>故事拆分常用方法</h2><blockquote>
+<p>对话是拆分故事的最好的工具之一</p>
+</blockquote>
+<p>负责故事拆分的同学一定不要忘了这个最好的工具，但同时我们也需要掌握一些基本的可操作的方法。故事拆分的方法有很多不同的观点，这里主要介绍Richard Lawrence描述的故事拆分招数。<br>先分三个阶段：</p>
+<ol>
+<li>准备阶段</li>
+<li>切分模式</li>
+<li>切分评估</li>
+</ol>
+<h3 id="准备阶段"><a href="#准备阶段" class="headerlink" title="准备阶段"></a>准备阶段</h3><p>不管待拆分的是featur还是史诗故事（epic），我们首先希望它是满足INVEST原则的（INVEST原则可以参见前一篇博客），当然“small”这条除外；否则先解决这个问题。<br>然后基于一个7人开发团队一个迭代我们推荐完成5-10个story，所以如果该待拆对象如果已经是团队速率的1/5到1/10的话，那就不用拆了，直接做吧，否则就可以开始拆分了。</p>
+<h3 id="切分模式"><a href="#切分模式" class="headerlink" title="切分模式"></a>切分模式</h3><p>切分有很多不同的模式：</p>
+<ul>
+<li><strong>按工作流程步骤切分</strong><ul>
+<li>是否可以先完成工作流程的头尾部分，再添加中间步骤去完善该故事呢？</li>
+</ul>
+</li>
+<li><strong>按操作切分</strong><ul>
+<li>是否可以把不同操作切分成独立的故事呢？（比如是有关“管理”或“配置”某物）</li>
+</ul>
+</li>
+<li><strong>按不同业务规则切分</strong><ul>
+<li>是否可以先完成业务规则的一个子集，后续再添加其他规则呢？（比如故事中有没有范围型词语像是“灵活的日期”来暗示着多种变化呢？）</li>
+</ul>
+</li>
+<li><strong>按不同类型数据切分</strong><ul>
+<li>是否可以先处理一种类型的数据，后续再处理其他类型的数据呢？</li>
+</ul>
+</li>
+<li><strong>按不同界面切分</strong><ul>
+<li>是否能先简化复杂界面，先完成一个简单版本？</li>
+<li>如果多个界面获取相同类型数据，是否可以先从一个界面处理数据，后续再增添其他界面呢？</li>
+</ul>
+</li>
+<li><strong>按简单/复杂切分</strong><ul>
+<li>如果简单的核心就能提供大部分价值，是否可以先完成简单核心，再通过后续的故事来扩充它呢？</li>
+</ul>
+</li>
+<li><strong>延迟性能优化</strong><ul>
+<li>是否可以先使其工作，后续再满足非功能性需求呢？（当复杂主要来自非功能性需求时）</li>
+<li>Make it work then make it faster.</li>
+</ul>
+</li>
+</ul>
+<h3 id="切分评估"><a href="#切分评估" class="headerlink" title="切分评估"></a>切分评估</h3><p>对于切分完的故事，我们再次检查故事大小是否是团队1/5到1/10的速率？是否满足INVEST原则？是否有故事可以降低优先级或可以删除？是否有故事先交付的话可以收获明显的价值、认知或降低整个项目风险的？<br>如果答案不是的话可以选择其他的切分模式再拆分试试看。</p>
+<p>参考来源：<a href="http://agileforall.com/splitting-stories-in-chinese/" target="_blank" rel="external">“How to Split a User Story” by Richard Lawrence</a></p>
+<h2 id="其他一些技巧"><a href="#其他一些技巧" class="headerlink" title="其他一些技巧"></a>其他一些技巧</h2><h3 id="怎么找到需求中最重要的故事"><a href="#怎么找到需求中最重要的故事" class="headerlink" title="怎么找到需求中最重要的故事"></a>怎么找到需求中最重要的故事</h3><p>最重要的故事往往是实现最大价值的故事，怎么才能在繁多的story中找到真正最有价值的点呢，我推荐使用<strong>impact mapping</strong>的方式来梳理。<br>在impact mapping里我们通过理清“目标”、“角色”、“影响”、“功能”之间的关系，从而找到实现业务目标的最短路径，明确哪些是最重要的故事。<br>更重要的是我们可以基于<strong>开发</strong>→<strong>测量</strong>→<strong>认知</strong>的循环，不断验证我们的“影响假设”和“功能假设”，完善影响地图，调整产品里程碑计划，完善产品和服务，动态地实现业务目标。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/impactmapping.jpg" alt="example of impact mapping"></p>
+<h3 id="怎样防止重要的需求被拆掉了"><a href="#怎样防止重要的需求被拆掉了" class="headerlink" title="怎样防止重要的需求被拆掉了"></a>怎样防止重要的需求被拆掉了</h3><p>容易被遗忘的重要需求往往可能是非功能性的需求，如果你不确定是不是还有哪些重要功能被我们忽略了，可以通过问两个问题帮助你开展脑暴：</p>
+<ul>
+<li><strong>产品上线后，如果你会收到一些用户投诉，会是哪些问题？</strong></li>
+<li><strong>产品上线后，如果监管部门来做审计并发现了问题，会是哪些问题？</strong><br>如果你确性能够应付所有的投诉和审计，那你已经没有什么重要故事遗漏了。</li>
+</ul>
+<h3 id="基于数据流向的拆分"><a href="#基于数据流向的拆分" class="headerlink" title="基于数据流向的拆分"></a>基于数据流向的拆分</h3><p>需求的复杂度往往都是由在系统中流转的<strong>信息和数据</strong>造成的，所以还有一种需求拆分方法就是从数据入手，通过理清数据的流向把所有功能都串起来。</p>
+<blockquote>
+<p>每个数据必须有来源。<br>每个数据必须要有消费者。</p>
+</blockquote>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://jarways.com/2016/06/28/storysplit/" data-id="cipz93296000h0atbg0q1f3cr" class="article-share-link">分享到</a><div class="tags"><a href="/tags/敏捷实践/">敏捷实践</a><a href="/tags/用户故事/">用户故事</a><a href="/tags/故事拆解/">故事拆解</a><a href="/tags/Impact-Mapping/">Impact Mapping</a></div><div class="post-nav"><a href="/2016/06/25/story/" class="next">用户故事之一：什么是用户故事</a></div><div id="disqus_thread"><script>var disqus_shortname = 'jarways';
+var disqus_identifier = '2016/06/28/storysplit/';
+var disqus_title = '用户故事之二：怎么做用户故事拆分';
+var disqus_url = 'http://jarways.com/2016/06/28/storysplit/';
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//jarways.disqus.com/count.js" async></script></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="http://jarways.com"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/敏捷实践/" style="font-size: 15px;">敏捷实践</a> <a href="/tags/估算/" style="font-size: 15px;">估算</a> <a href="/tags/扑克/" style="font-size: 15px;">扑克</a> <a href="/tags/用户故事/" style="font-size: 15px;">用户故事</a> <a href="/tags/故事拆解/" style="font-size: 15px;">故事拆解</a> <a href="/tags/Impact-Mapping/" style="font-size: 15px;">Impact Mapping</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/06/28/storysplit/">用户故事之二：怎么做用户故事拆分</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/25/story/">用户故事之一：什么是用户故事</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/20/estimate/">敏捷估算</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/18/born/">开篇</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//jarways.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">守破離的轮回.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
