@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>什么是用户故事 | 守破離的轮回</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/4.1.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">什么是用户故事</h1><a id="logo" href="/.">守破離的轮回</a><p class="description">鲁佳的博客</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">什么是用户故事</h1><div class="post-meta">Jul 15, 2016<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2016/07/15/story/" href="/2016/07/15/story/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要来讨论用户故事"><span class="toc-number">1.</span> <span class="toc-text">为什么要来讨论用户故事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是用户故事"><span class="toc-number">2.</span> <span class="toc-text">什么是用户故事</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Card"><span class="toc-number">2.1.</span> <span class="toc-text">1.Card</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Conversation"><span class="toc-number">2.2.</span> <span class="toc-text">2.Conversation</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Confirmation"><span class="toc-number">2.3.</span> <span class="toc-text">3.Confirmation</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#好故事需要满足的原则"><span class="toc-number">3.</span> <span class="toc-text">好故事需要满足的原则</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非功能性需求"><span class="toc-number">4.</span> <span class="toc-text">非功能性需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Story-mapping"><span class="toc-number">5.</span> <span class="toc-text">Story mapping</span></a></li></ol></div></div><div class="post-content"><p><img src="http://o8z0wc44x.bkt.clouddn.com/tot-tales-story-time.jpg" alt="story time"></p>
+<h2 id="为什么要来讨论用户故事"><a href="#为什么要来讨论用户故事" class="headerlink" title="为什么要来讨论用户故事"></a>为什么要来讨论用户故事</h2><p>在传统研发模式下，特别是在一些小型的产品研发领域，产品经理往往会编写一份产品需求文档（PRD），然后技术团队再依照于这个PRD文档来做开发。<br>这种基于PRD的开发方式在当前市场变化越来越快，研发组织越来越追求小步快跑的产品发布节奏的环境下遇到了很多挑战：</p>
+<ol>
+<li>产品编写一份PRD往往需要很长的时间（产品默认都会追求编写一份完整的需求文档，要考虑到方方面面），考虑到互联网非常紧张的产品发布周期压力，技术团队会抱怨产品需求给得太晚，留给技术的开发时间太短。</li>
+<li>整体的开发周期长，获取用户反馈也就晚。完整的产品需求也就可能导致只能完整的交付，当然，这个也和下面第三点有关。</li>
+<li>PRD内容的丰富同时造成了优先级不清晰。虽然PRD里也会标注有优先级，但是因为里面需求的数量庞大并且相互交织依赖，最后的结果就是高优先级的需求太多，优先级不能细化导致失去价值。</li>
+<li>缺少对话。需求文档不可能承载所有需求信息，而且由于描述的角度，容易造成误解。所以需求不仅仅只是一份文档，它更应该是一个沟通的工具，可以用来帮忙大家对特性的理解达成一致。</li>
+<li>后期调整需求成本高，但不幸的是在随着产品形态不断的显露出来的时候，需求的调整是不可避免的。而且过早的决策，需求调整的可能性只会更高。</li>
+</ol>
+<p>为了解决这些问题，使用<strong>用户故事</strong>的方法来表述需求逐渐流行起来。<br>本文试图从非常基础的角度解释什么是用户故事。</p>
+<h2 id="什么是用户故事"><a href="#什么是用户故事" class="headerlink" title="什么是用户故事"></a>什么是用户故事</h2><p>用户故事一共包含三个部分，简称3C模型：</p>
+<ol>
+<li>Card（卡片）</li>
+<li>Conversation（会话） </li>
+<li>Confirmation（确认）</li>
+</ol>
+<h3 id="1-Card"><a href="#1-Card" class="headerlink" title="1.Card"></a>1.Card</h3><blockquote>
+<p>作为&lt;用户角色&gt;，我想要&lt;产品特性&gt;，这样可以&lt;价值或收益&gt;。</p>
+</blockquote>
+<p>这个卡片形式已经是家喻户晓的了（虽然大家不一定都能按这个来做），甚至当大家提到“用户故事”的时候也就只记得这个卡片了，<strong>在很多人心中卡片和用户故事是等同的</strong>。但显然这样是片面的，这样的理解就只是得其形而失其神。<br>卡片仅仅是用户故事最明显的表现形式，但他不是最重要的。</p>
+<h3 id="2-Conversation"><a href="#2-Conversation" class="headerlink" title="2.Conversation"></a>2.Conversation</h3><blockquote>
+<p>卡片代表客户需求而不是记录需求。<br>同样一份文档或卡片，阅读的人不同，各自得到的信息也不一样。</p>
+</blockquote>
+<p>卡片包含故事的文字描述，然而需求细节要在<strong>对话</strong>中获得。故事之所以叫故事，因为它是要<strong>讲</strong>而不是要写的。<br><strong>说得通俗一点就是一张卡片只是代表了一个需求，但它远远不是需求的全部，相关干系人一起在对话中发现并探索需求的细节，这个才是更重要的。</strong><br>对话肯定不是一次性的，而是持续的深度交谈：写故事的时候会有对话，宣讲的时候又有一次，估算的时候再有一次，迭代计划会议的时候还会有，迭代中在软件设计，构建和测试的时候都会有。<br>尽管我们说对话主要是依靠口头语言交流发生的，单我们仍然经常借助于文档的方式做说明或记录：比如一张PS的效果图，一张画在白板上的交互逻辑照片，引用某篇文档中规范内容的链接，等等。</p>
+<h3 id="3-Confirmation"><a href="#3-Confirmation" class="headerlink" title="3.Confirmation"></a>3.Confirmation</h3><p>用户故事还要包含确认信息，作为接收标准（或确认条件）。这和“完成的定义”（DoD）非常像，只不过DoD更偏向哪些general的和流程化的事项。</p>
+<p>如果我们使用的物理化的卡片的话，正面写的是story的描述，那么背面就很适合写上确认条件。<br><img src="http://o8z0wc44x.bkt.clouddn.com/2016-06-26_19-46-30.jpg" alt="卡片正反面"></p>
+<p>有了确认条件，开发和测试团队就能更好的理解要构建和测试的是什么，产品团队可以确认用户故事的实现是否和服预期。<br>“确认条件”最迟是需要在迭代planning meeting上确定的，很明显，这个是story估算的重要依据之一。但是我们不保证确认条件不会发生变化，但前提是调整和变化不会影响本次迭代的交付，如果真的有大的影响，我们就要马上调整我们的迭代计划（re-planning）。<br>确认条件在某种程度上也能看成验收条件，是story的测试要点，很自然的我们就想到了敏捷的另一种实践：接收测试驱动开发（ATDD）。</p>
+<p>关于“接收测试驱动开发”和“实例化需求”，我们以后再谈。</p>
+<h2 id="好故事需要满足的原则"><a href="#好故事需要满足的原则" class="headerlink" title="好故事需要满足的原则"></a>好故事需要满足的原则</h2><p>一个好的故事需要满足INVEST标准：</p>
+<ol>
+<li>独立的（Independent）</li>
+<li>可协商的（Negotiable）</li>
+<li>有价值的（Valuable）</li>
+<li>可估算的（Estimatable）</li>
+<li>小的（Small）</li>
+<li>可测试的（Testable）</li>
+</ol>
+<p>我不太想用长篇大论来一一介绍这六个好故事特征（不然篇幅太长），这里我只用最简单的一句话来描述各个特征的好处：</p>
+<ul>
+<li>不独立的故事会对优先级的排列和测试带来巨大的麻烦；</li>
+<li>故事不是合同，故事只是占位符，它提醒我们需要更多的去对话和协商；</li>
+<li>卡片的三段式写法本身就是要强调价值的，这里要强调的是价值是对用户和客户来说的，我们要尽量避免做只是对开发团队有价值的故事；</li>
+<li>不能估算的故事要么是对业务还没理解，要么是团队缺少相应的技术实力，要么就是太大，总之这些都是要在开发之前解决的问题；</li>
+<li>小是必须的，但是太小也不是不能合并一下，总之大小要合适；</li>
+<li>如果不能测试，就不能证明它是完成的。</li>
+</ul>
+<p>有兴趣深入探讨的话可以自己google或者参考Mike Cohn的《用户故事与敏捷方法》。</p>
+<h2 id="非功能性需求"><a href="#非功能性需求" class="headerlink" title="非功能性需求"></a>非功能性需求</h2><p>非功能性的需求往往包含安全性、可靠性、互操作性、健壮性、易使用性、可维护性、可移植性、可重用性、可扩充性、实验性等，一般反应了系统的约束，而非系统特定行为的需求。</p>
+<ul>
+<li>对于非功能性需求我们仍然希望能按照故事的结构来编写它，这样能帮助我们理清这些需求的价值，这往往是容易忽略的；</li>
+<li>非功能性需求往往是跨所有功能性需求的，一旦你完成了一个非功能性需求，那么在以后的迭代中你要始终关注这个非功能性需求以防止它被影响而失效。那该怎么办呢？<ul>
+<li>考虑把非功能性的要求放到每一个功能性需求DoD中去，在一开始就考虑到系统的各种限制</li>
+<li>或者和PO约定，哪些迭代里需要对非系统性需求做验证和维护</li>
+</ul>
+</li>
+</ul>
+<h2 id="Story-mapping"><a href="#Story-mapping" class="headerlink" title="Story mapping"></a>Story mapping</h2><p>使用story的形式做需求管理最被人诟病的就是，相对于大而全的PRD，story是“只见树木，不见森林”。用户故事地图（user story mapping）的是给这个问题一个解决办法。</p>
+<blockquote>
+<p>用户故事地图，就是在讲大故事的同时进行拆分。</p>
+</blockquote>
+<p>对于story mapping暂时就不在这篇文章中详细描述了，后续会单独开一片story mapping的小文。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://jarways.com/2016/07/15/story/" data-id="cjbwaxbot0012ris6flukpws0" class="article-share-link">分享到</a><div class="tags"><a href="/tags/用户故事/">用户故事</a><a href="/tags/INVEST/">INVEST</a><a href="/tags/Story-Mapping/">Story Mapping</a></div><div class="post-nav"><a href="/2016/07/30/cspo/" class="pre">紫色的CSPO培训感受小结</a><a href="/2016/07/02/estimate/" class="next">敏捷估算</a></div><div data-thread-key="2016/07/15/story/" data-title="什么是用户故事" data-url="http://jarways.com/2016/07/15/story/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2016/07/15/story/" data-title="什么是用户故事" data-url="http://jarways.com/2016/07/15/story/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://jarways.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/回顾会议/" style="font-size: 15px;">回顾会议</a> <a href="/tags/SoS/" style="font-size: 15px;">SoS</a> <a href="/tags/大规模敏捷/" style="font-size: 15px;">大规模敏捷</a> <a href="/tags/SAFe/" style="font-size: 15px;">SAFe</a> <a href="/tags/ATDD/" style="font-size: 15px;">ATDD</a> <a href="/tags/实例化需求/" style="font-size: 15px;">实例化需求</a> <a href="/tags/测试/" style="font-size: 15px;">测试</a> <a href="/tags/Robot/" style="font-size: 15px;">Robot</a> <a href="/tags/LeSS/" style="font-size: 15px;">LeSS</a> <a href="/tags/NOKIA/" style="font-size: 15px;">NOKIA</a> <a href="/tags/估算/" style="font-size: 15px;">估算</a> <a href="/tags/扑克/" style="font-size: 15px;">扑克</a> <a href="/tags/WSJF/" style="font-size: 15px;">WSJF</a> <a href="/tags/grooming/" style="font-size: 15px;">grooming</a> <a href="/tags/refinement/" style="font-size: 15px;">refinement</a> <a href="/tags/DEEP/" style="font-size: 15px;">DEEP</a> <a href="/tags/SQA/" style="font-size: 15px;">SQA</a> <a href="/tags/鱼骨图/" style="font-size: 15px;">鱼骨图</a> <a href="/tags/ESVP/" style="font-size: 15px;">ESVP</a> <a href="/tags/robotframework/" style="font-size: 15px;">robotframework</a> <a href="/tags/自动化测试/" style="font-size: 15px;">自动化测试</a> <a href="/tags/jython/" style="font-size: 15px;">jython</a> <a href="/tags/用户故事/" style="font-size: 15px;">用户故事</a> <a href="/tags/INVEST/" style="font-size: 15px;">INVEST</a> <a href="/tags/Story-Mapping/" style="font-size: 15px;">Story Mapping</a> <a href="/tags/故事拆解/" style="font-size: 15px;">故事拆解</a> <a href="/tags/Impact-Mapping/" style="font-size: 15px;">Impact Mapping</a> <a href="/tags/CSPO/" style="font-size: 15px;">CSPO</a> <a href="/tags/Daniel/" style="font-size: 15px;">Daniel</a> <a href="/tags/Purple/" style="font-size: 15px;">Purple</a> <a href="/tags/紫牛/" style="font-size: 15px;">紫牛</a> <a href="/tags/Odd-e/" style="font-size: 15px;">Odd-e</a> <a href="/tags/锡林格勒/" style="font-size: 15px;">锡林格勒</a> <a href="/tags/草原/" style="font-size: 15px;">草原</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/12/12/LargeScaleAgile4/">大规模敏捷之四：SAFe和LeSS的对比分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/12/LargeScaleAgile3/">大规模敏捷之三：LeSS</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/refinement/">需求梳理（Refinement）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/16/robot/">Robot Framework概要介绍</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/27/atdd/">验收测试驱动开发（ATDD）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/17/LargeScaleAgile2/">大规模敏捷之二：SAFe</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/15/WSJF/">需求排序还在拍脑袋？WSJF来帮你</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/02/retrospective/">回顾会议（retrospective）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/29/LargeScaleAgile1/">大规模敏捷之一：SoS</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/13/grasslands/">锡林格勒草原行</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.jianshu.com/" title="简书" target="_blank">简书</a><ul></ul><a href="https://www.zhihu.com/" title="知乎" target="_blank">知乎</a><ul></ul><a href="https://www.infoq.com/" title="infoq" target="_blank">infoq</a><ul></ul><a href="http://www.vaikan.com/" title="外刊评论" target="_blank">外刊评论</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">守破離的轮回.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'jarways'};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?377caee1b86e47c22a67d71f4f0fa678";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
