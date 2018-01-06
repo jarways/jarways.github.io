@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>用户体验的度量进阶之路 | 守破離的轮回</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/4.1.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.0/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.2/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">用户体验的度量进阶之路</h1><a id="logo" href="/.">守破離的轮回</a><p class="description">鲁佳的博客</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">用户体验的度量进阶之路</h1><div class="post-meta">Dec 13, 2017<script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2017/12/13/UXmeasure/" href="/2017/12/13/UXmeasure/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么来度量一个主观的感受"><span class="toc-number">1.</span> <span class="toc-text">怎么来度量一个主观的感受</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基于行为的度量方式"><span class="toc-number">2.</span> <span class="toc-text">基于行为的度量方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#访问行为的度量指标"><span class="toc-number">2.1.</span> <span class="toc-text">访问行为的度量指标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#业务行为的度量指标"><span class="toc-number">2.2.</span> <span class="toc-text">业务行为的度量指标</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基于态度的度量方式"><span class="toc-number">3.</span> <span class="toc-text">基于态度的度量方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#满意度"><span class="toc-number">3.1.</span> <span class="toc-text">满意度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#净推荐值（NPS）"><span class="toc-number">3.2.</span> <span class="toc-text">净推荐值（NPS）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#满意度和NPS的区别"><span class="toc-number">4.</span> <span class="toc-text">满意度和NPS的区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶之路-体验指标金字塔"><span class="toc-number">5.</span> <span class="toc-text">进阶之路-体验指标金字塔</span></a></li></ol></div></div><div class="post-content"><p>用户体验是一个纯主观的感受，从这个概念出发可以想到其实是很难度量的。但是我们常常说以终为始，如果你希望提升自己产品的用户体验，但是你确又没有办法来度量它，那么你一切想改进它的努力就都是盲目的、徒劳的。</p>
+<h2 id="怎么来度量一个主观的感受"><a href="#怎么来度量一个主观的感受" class="headerlink" title="怎么来度量一个主观的感受"></a>怎么来度量一个主观的感受</h2><p>度量用户的行为（在互联网产品上的操作行为）很容易，但想度量用户的主观感受，这是一个很难的命题，凡是给你一个简单答案的，那估计都是骗子。基于这个思路，我们想到可以从行为到态度去一步一步逼近对主观感受的度量：行为好度量，但它离真实的体验较远，更多是参考意义；态度很虚也不好度量，但它却离真实的体验靠的更近：</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E5%BA%A6%E9%87%8F%E4%BD%93%E9%AA%8C%E7%9A%84%E6%A8%A1%E5%9E%8B.jpg" alt="用户体验的度量模型"></p>
+<p>从行为到态度，这就是我们尝试度量用户体验的路径：<br>在<strong>行为的度量</strong>上，我们往往度量的是访问量、转化率这些指标；<br>在<strong>态度的度量</strong>上，我们往往度量的是满意度、净推荐值这些指标；</p>
+<h2 id="基于行为的度量方式"><a href="#基于行为的度量方式" class="headerlink" title="基于行为的度量方式"></a>基于行为的度量方式</h2><h3 id="访问行为的度量指标"><a href="#访问行为的度量指标" class="headerlink" title="访问行为的度量指标"></a>访问行为的度量指标</h3><p>访问行为是最容易度量的指标，一般的互谅网产品都会使用用户的访问行为数据来证明自己产品的影响力和价值，比如最常见的指标就有PV、UV。但这些指标能多大程度证明用户体验的好坏就不好说了。</p>
+<p>我们来看看还有哪些用户的访问行为指标可能和用户体验相关：</p>
+<ul>
+<li><p>DAU/WAU/MAU<br>日活、周活、月活，这个概念和UV比较类似是度量访问用户数的，但有些有追求的产品会对活跃用户这个概念提出更高的要求，仅仅登陆到了产品上可能不能算是活跃的用户。</p>
+</li>
+<li><p>PCU<br>最高同时在线用户数，这是一个在游戏行业反常关键的指标。在游戏世界里，玩家需要在一个由众多其他完成组成的虚拟世界里实现自己的愿望，人越多游戏越有吸引力，当然微信差不多也是这个意思。</p>
+</li>
+<li><p>Bounce Rate<br>跳出率，指的是访问一个页面后离开网站的次数占总访问次数的比例。跳出率高说明你的产品给人的第一印象很糟糕，完全没有兴趣试用你提供的服务。（或者用户是被诱骗进来的）</p>
+</li>
+<li><p>Retention Rate<br>留存率，反应了用户在首次试用之后，还有多大几率回来重新使用你的产品。和留存率对应的就是流失率。</p>
+</li>
+</ul>
+<h3 id="业务行为的度量指标"><a href="#业务行为的度量指标" class="headerlink" title="业务行为的度量指标"></a>业务行为的度量指标</h3><p>除了基于访问行为的指标，还有一个比较容易度量的就是业务行为的指标，最出名的就是<strong>转化率</strong>。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E8%BD%AC%E5%8C%96%E7%8E%87.jpg" alt="转化率定义"></p>
+<p>转化率反应了产品最终实现了用户价值的比例，只有发生了期望的行为，产品或用户才可能算是真正实现了最初的目标。</p>
+<p>最常见的比如招聘系统的招聘转化率，还有淘宝后台的交易转化率：</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%8B%9B%E8%81%98%E8%BD%AC%E5%8C%96%E7%8E%87.jpg" alt="招聘转化率"></p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%B7%98%E5%AE%9D%E8%BD%AC%E5%8C%96%E7%8E%87.jpg" alt="交易转化率"></p>
+<h2 id="基于态度的度量方式"><a href="#基于态度的度量方式" class="headerlink" title="基于态度的度量方式"></a>基于态度的度量方式</h2><h3 id="满意度"><a href="#满意度" class="headerlink" title="满意度"></a>满意度</h3><p>最常见的满意度就是在银行（或其他服务窗口）经常被迫要点的服务满意度评价器了，还有就是打车之后司机经常说的”请给一个五星好评哦“</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%BB%A1%E6%84%8F%E5%BA%A6%E8%AF%84%E4%BB%B7%E5%99%A8.jpg" alt="满意度评价"></p>
+<p>那满意度是怎么定义的呢？</p>
+<blockquote>
+<p>满意度是指用户认为产品或服务已达到或超过他的<strong>预期</strong>的一种<strong>感受</strong></p>
+</blockquote>
+<p>这里有一个关键词是<strong>预期</strong>。用户对你的产品满不满意，有一个很重要的前提是TA本身的预期是怎么样的，如果你不能达到用户的预期，那你不可能然该用户满意，如果你能超出用户的预期，那就要恭喜你了。</p>
+<p>在CSI模型中指出了满意度收到了哪些原因变量的影响，又影响了哪些结果变量，如下图：</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%BB%A1%E6%84%8F%E5%BA%A6CSI.jpg" alt="CSI模型"></p>
+<p>关于满意度，还有一个Kano模型不得不提，这个也是基于用户满意感知对产品功能做分类的一个最常见的参考模型。这方面的介绍材料非常多，我们这里就不细说了，大家有兴趣可以搜索一下。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/Kano.jpg" alt="Kano模型"></p>
+<h3 id="净推荐值（NPS）"><a href="#净推荐值（NPS）" class="headerlink" title="净推荐值（NPS）"></a>净推荐值（NPS）</h3><p>净推荐值是最近非常火热的一个用来度量用户体验的指标，比如滴滴公司就是使用这个作为公司统一的用户体验度量指标，并成为公司的核心战略（内部的说法是”安全第一，体验第二“）。</p>
+<p>NPS就是让用户在调研问卷上回答一个核心问题:</p>
+<blockquote>
+<p>您在多大程度上愿意向您的朋友（亲人、同事……）推荐xx公司/产品？</p>
+</blockquote>
+<p>这个问题的答案选择是一个从0分到10分的连续空间，相当于你有11个选择，0分以为着非常不愿意，10分以为着非常愿意。</p>
+<p>在用户选择的结果上，9-10分才认为是推荐者，0-6分都是贬损者，7-8分是中立者。NPS的算法是推荐者的百分比减去贬损者的百分比。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/NPS%E5%AE%9A%E4%B9%89.jpg" alt="NPS的定义"></p>
+<p>可以看出来，NPS是一个相当苛刻的指标，如果不是用户体验很好，很容易就得到一个为负数的NPS结果。这里我们可以看看一般行业的NPS都处在一个什么样的水平，下图是来自Satmetrix的调研，其中可以看到，互联网服务行业的平均NPS中位数只有-5%，仅仅比银行业好一些。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E8%A1%8C%E4%B8%9ANPS%E5%80%BC.jpg" alt="行业NPS平均水平"></p>
+<h2 id="满意度和NPS的区别"><a href="#满意度和NPS的区别" class="headerlink" title="满意度和NPS的区别"></a>满意度和NPS的区别</h2><p>我们来看看满意度和NPS的区别：</p>
+<table>
+<thead>
+<tr>
+<th>满意度</th>
+<th>NPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品/服务的可用性</td>
+<td>用户忠诚度/与企业的关系</td>
+</tr>
+<tr>
+<td>短期/目前的表现</td>
+<td>长期/未来的收益</td>
+</tr>
+<tr>
+<td>关注细节</td>
+<td>整体体验</td>
+</tr>
+</tbody>
+</table>
+<p>可以看出来相对于满意度，NPS初在更高、更抽象的维度上面。关于满意和推荐，公司里还真有人做了实际的测试，下图是一个测试结果：一个是在推荐的用户里调查满意的情况，另一个是在满意的用户里调查推荐的情况。情况可以明显的看到，推荐的人往往都比较满意，但满意的人不一定都推荐。这个测试可以清楚的看到推荐是一个比满意更高的要求。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%BB%A1%E6%84%8F%E5%92%8C%E6%8E%A8%E8%8D%90.jpg" alt=""></p>
+<p>其实满意是一个很含糊、泛化的概念，如果我们仔细的拆分满意，就会发现满意其实是有多个层次的。范范的满意往上，是”喜欢“，喜欢就比满意有更多的感情色彩了；”喜欢“往上是”信赖“，信赖来得就比喜欢更难得；”信赖“往上是”参与“，信赖是一个感情，参与就是在感情的层面上还拥有的行动；”参与“往上是”盲从“，盲从都有点贬义的感觉了，这就是一个无条件支持的境界。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E6%BB%A1%E6%84%8F%E7%9A%84%E5%B1%82%E6%AC%A1.jpg" alt=""></p>
+<p>所以简单的满意度已经不能真正的衡量出用户的实际满意的情况了，进一步提高度量的标准就非常有必要了。</p>
+<h2 id="进阶之路-体验指标金字塔"><a href="#进阶之路-体验指标金字塔" class="headerlink" title="进阶之路-体验指标金字塔"></a>进阶之路-体验指标金字塔</h2><p>产品的用户体验度量一个综合性的问题，也没有一个标准的答案，只要我们能找到适合自己产品的度量手段并能最终指导我们去提升产品的用户体验就是有价值的。</p>
+<p><img src="http://o8z0wc44x.bkt.clouddn.com/%E4%BD%93%E9%AA%8C%E6%8C%87%E6%A0%87%E9%87%91%E5%AD%97%E5%A1%94.jpg" alt="用户体验指标金字塔"></p>
+<p>本来还想讲讲滴滴NPS的一些实践，不过考虑一些数据也不方便对外分享，就不写了。</p>
+</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="http://jarways.com/2017/12/13/UXmeasure/" data-id="cjc3h4yt6000wjl7g7nx3d8b0" class="article-share-link">分享到</a><div class="tags"><a href="/tags/用户体验/">用户体验</a><a href="/tags/NPS/">NPS</a></div><div class="post-nav"><a href="/2017/11/23/UXwhy/" class="next">互联网时代的用户体验</a></div><div data-thread-key="2017/12/13/UXmeasure/" data-title="用户体验的度量进阶之路" data-url="http://jarways.com/2017/12/13/UXmeasure/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2017/12/13/UXmeasure/" data-title="用户体验的度量进阶之路" data-url="http://jarways.com/2017/12/13/UXmeasure/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4"><div id="sidebar"><div class="widget"><form action="//www.baidu.com/baidu" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="search" name="word" maxlength="20" placeholder="Search"/><input type="hidden" name="si" value="http://jarways.com"/><input name="tn" type="hidden" value="bds"/><input name="cl" type="hidden" value="3"/><input name="ct" type="hidden" value="2097152"/><input name="s" type="hidden" value="on"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Odd-e/" style="font-size: 15px;">Odd-e</a> <a href="/tags/用户体验/" style="font-size: 15px;">用户体验</a> <a href="/tags/SAFe/" style="font-size: 15px;">SAFe</a> <a href="/tags/LeSS/" style="font-size: 15px;">LeSS</a> <a href="/tags/NOKIA/" style="font-size: 15px;">NOKIA</a> <a href="/tags/大规模敏捷/" style="font-size: 15px;">大规模敏捷</a> <a href="/tags/SoS/" style="font-size: 15px;">SoS</a> <a href="/tags/WSJF/" style="font-size: 15px;">WSJF</a> <a href="/tags/ATDD/" style="font-size: 15px;">ATDD</a> <a href="/tags/实例化需求/" style="font-size: 15px;">实例化需求</a> <a href="/tags/测试/" style="font-size: 15px;">测试</a> <a href="/tags/Robot/" style="font-size: 15px;">Robot</a> <a href="/tags/项目经理/" style="font-size: 15px;">项目经理</a> <a href="/tags/产品经理/" style="font-size: 15px;">产品经理</a> <a href="/tags/CSPO/" style="font-size: 15px;">CSPO</a> <a href="/tags/Daniel/" style="font-size: 15px;">Daniel</a> <a href="/tags/Purple/" style="font-size: 15px;">Purple</a> <a href="/tags/紫牛/" style="font-size: 15px;">紫牛</a> <a href="/tags/NPS/" style="font-size: 15px;">NPS</a> <a href="/tags/grooming/" style="font-size: 15px;">grooming</a> <a href="/tags/refinement/" style="font-size: 15px;">refinement</a> <a href="/tags/DEEP/" style="font-size: 15px;">DEEP</a> <a href="/tags/SQA/" style="font-size: 15px;">SQA</a> <a href="/tags/robotframework/" style="font-size: 15px;">robotframework</a> <a href="/tags/自动化测试/" style="font-size: 15px;">自动化测试</a> <a href="/tags/jython/" style="font-size: 15px;">jython</a> <a href="/tags/锡林格勒/" style="font-size: 15px;">锡林格勒</a> <a href="/tags/草原/" style="font-size: 15px;">草原</a> <a href="/tags/用户故事/" style="font-size: 15px;">用户故事</a> <a href="/tags/INVEST/" style="font-size: 15px;">INVEST</a> <a href="/tags/Story-Mapping/" style="font-size: 15px;">Story Mapping</a> <a href="/tags/估算/" style="font-size: 15px;">估算</a> <a href="/tags/扑克/" style="font-size: 15px;">扑克</a> <a href="/tags/回顾会议/" style="font-size: 15px;">回顾会议</a> <a href="/tags/鱼骨图/" style="font-size: 15px;">鱼骨图</a> <a href="/tags/ESVP/" style="font-size: 15px;">ESVP</a> <a href="/tags/故事拆解/" style="font-size: 15px;">故事拆解</a> <a href="/tags/Impact-Mapping/" style="font-size: 15px;">Impact Mapping</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/12/13/UXmeasure/">用户体验的度量进阶之路</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/11/23/UXwhy/">互联网时代的用户体验</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/10/08/productmanager/">敏捷、精益、微服务环境下的项目经理和产品经理</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/21/LargeScaleAgile4/">大规模敏捷之四：SAFe和LeSS的对比分析</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/22/LargeScaleAgile3/">大规模敏捷之三：LeSS</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/01/07/LargeScaleAgile2/">大规模敏捷之二：SAFe</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/12/19/LargeScaleAgile1/">大规模敏捷之一：SoS</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/24/retrospective/">回顾会议（retrospective）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/11/04/refinement/">需求梳理（Refinement）</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/10/16/robot/">Robot Framework概要介绍</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://www.jianshu.com/" title="简书" target="_blank">简书</a><ul></ul><a href="https://www.zhihu.com/" title="知乎" target="_blank">知乎</a><ul></ul><a href="https://www.infoq.com/" title="infoq" target="_blank">infoq</a><ul></ul><a href="http://www.vaikan.com/" title="外刊评论" target="_blank">外刊评论</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">守破離的轮回.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'jarways'};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?377caee1b86e47c22a67d71f4f0fa678";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
